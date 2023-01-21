@@ -1,0 +1,8 @@
+enum RAD_RPC: ERPCs
+{
+	INRAD,
+	OUTRAD,
+	INRADGASMASK,
+	DEATH,
+
+}

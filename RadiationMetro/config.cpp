@@ -197,28 +197,6 @@ class CfgVehicles
 		soundVoiceType = "gasmask";
 		soundVoicePriority = 5;
 	};
-
-	class PMK_5A_Gas_Mask : Clothing 
-	{
-		attachments[] = {"GasMaskFilter"};
-		displayName = "PMK-5А";
-		noHelmet = 0;
-		noEyewear = 1;
-
-		class EnergyManager
-		{
-			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 15;
-			plugType = 1;
-			attachmentAction = 1;
-			updateInterval = 40;
-			autoSwitchOff = 1;
-			energyStorageMax = 50;
-		};
-		soundVoiceType = "gasmask";
-		soundVoicePriority = 5;
-	};
-
 	class AirborneMask : Clothing 
 	{
 		attachments[] = {"GasMaskFilter"};
@@ -230,69 +208,6 @@ class CfgVehicles
 		{
 			autoSwitchOffWhenInCargo = 1;
 			energyUsagePerSecond = 11;
-			plugType = 1;
-			attachmentAction = 1;
-			updateInterval = 40;
-			autoSwitchOff = 1;
-			energyStorageMax = 50;
-		};
-		soundVoiceType = "gasmask";
-		soundVoicePriority = 5;
-	};
-
-	class XS_EQP_GASMASK_Respirator : Clothing 
-	{
-		attachments[] = {"GasMaskFilter"};
-		displayName = "Military-issue Respirator";
-		noHelmet = 0;
-		noEyewear = 1;
-
-		class EnergyManager
-		{
-			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 9;
-			plugType = 1;
-			attachmentAction = 1;
-			updateInterval = 40;
-			autoSwitchOff = 1;
-			energyStorageMax = 50;
-		};
-		soundVoiceType = "gasmask";
-		soundVoicePriority = 5;
-	};
-
-	class XS_EQP_GASMASK_CN2f : Clothing 
-	{
-		attachments[] = {"GasMaskFilter"};
-		displayName = "CN2F Gasmask";
-		noHelmet = 0;
-		noEyewear = 1;
-
-		class EnergyManager
-		{
-			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 7;
-			plugType = 1;
-			attachmentAction = 1;
-			updateInterval = 40;
-			autoSwitchOff = 1;
-			energyStorageMax = 50;
-		};
-		soundVoiceType = "gasmask";
-		soundVoicePriority = 5;
-	};
-
-	class XS_EQP_GASMASK_mute_no_tape : Clothing 
-	{
-		attachments[] = {"GasMaskFilter"};
-		displayName = "CBRN Gasmask";
-		noHelmet = 0;
-		noEyewear = 1;
-
-		class EnergyManager
-		{
-			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 5;
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;

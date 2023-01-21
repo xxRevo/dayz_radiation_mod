@@ -6,11 +6,11 @@ modded class PlayerBase
     const static string Rad_fileName = "RadiationMetro.json";
     const static string ProfileFolder = "$profile:\\";
     string m_radFilePath = ProfileFolder+Rad_Tagfolder+Rad_fileName;
-    ref array<string> GasMasks = new array<string>;
-    ref array<string> Filters = new array<string>;
+    //ref array<string> GasMasks = new array<string>;
+    //ref array<string> Filters = new array<string>;
 
-    //ref array<string> GasMasks = {"GP5GasMask","PMK_5A_Gas_Mask","GasMask", "AirborneMask", "XS_EQP_GASMASK_Slon", "XS_EQP_GASMASK_R5_P_filter_black", "XS_EQP_GASMASK_R5_P_filter_orange", "XS_EQP_GASMASK_R5_P_filter_black", "XS_EQP_GASMASK_R5_SH2_filter_orange", "XS_EQP_GASMASK_GP7_filter_black", "XS_EQP_GASMASK_GP7_filter_black_l2"};
-    //ref array<string> Filters = {"JZ_GP5GasMask_Filter"};
+    ref array<string> GasMasks = {"GP5GasMask","GasMask", "AirborneMask"};
+    ref array<string> Filters = {"JZ_GP5GasMask_Filter"};
 
     bool GetRadState()
     {

@@ -91,14 +91,16 @@ modded class GP5GasMask
 		if ( GetGame().IsServer() )
 		{
 			ItemBase m_filter = ItemBase.Cast(item);
-			if(m_filter.GetQuantity() >= 1)
-			{
+			// if(m_filter.GetQuantity() >= 1)
+			// {
 			// 	m_filter.AddQuantity(-1);
 				GetCompEM().AddEnergy(m_WorkingTimePerPills);
 				GetCompEM().SwitchOn();
-			}
+			// }
 		}
 	}
+
+	
 
 
 	override void OnSwitchOn()
@@ -110,16 +112,18 @@ modded class GP5GasMask
 	{
 		if ( GetGame().IsServer() )
 		{
+
+			ConsumeFilter();
+
 			PlayerBase player;
 			Class.CastTo(player, GetHierarchyRootPlayer());
 
 			if(player && !player.IsAlive())
 			{
+
 				GetCompEM().SwitchOff();
 				return;
 			}
-
-			ConsumeFilter();
 		}
 	}
 

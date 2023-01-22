@@ -105,7 +105,8 @@ modded class GP5GasMask
 
 	override void OnSwitchOn()
 	{
-		if ( !GetCompEM().HasEnoughStoredEnergy() ) GetCompEM().SwitchOff();
+		if ( !GetCompEM().HasEnoughStoredEnergy() )
+			GetCompEM().SwitchOff();
 	}
 
 	override void OnWork ( float consumed_energy )

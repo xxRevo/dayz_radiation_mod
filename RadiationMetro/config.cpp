@@ -166,7 +166,7 @@ class CfgVehicles
 		class EnergyManager
 		{
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 20;
+			energyUsagePerSecond = 18;
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 20;

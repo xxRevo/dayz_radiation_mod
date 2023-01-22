@@ -9,7 +9,7 @@ modded class PlayerBase
     //ref array<string> GasMasks = new array<string>;
     //ref array<string> Filters = new array<string>;
 
-    ref array<string> GasMasks = {"GP5GasMask","GasMask", "AirborneMask"};
+    ref array<string> GasMasks = {"GP5GasMask","GasMask", "PMK_5A_Gas_Mask","AirborneMask"};
     ref array<string> Filters = {"JZ_GP5GasMask_Filter", "GasMask_Filter_Improvised"};
 
     bool GetRadState()

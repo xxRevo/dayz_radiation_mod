@@ -170,7 +170,7 @@ class CfgVehicles
 			energyUsagePerSecond = 18;
 			plugType = 1;
 			attachmentAction = 1;
-			updateInterval = 20;
+			updateInterval = 40;
 			autoSwitchOff = 1;
 			energyStorageMax = 50;
 		};
@@ -195,13 +195,36 @@ class CfgVehicles
 			energyUsagePerSecond = 16;
 			plugType = 1;
 			attachmentAction = 1;
-			updateInterval = 20;
+			updateInterval = 40;
 			autoSwitchOff = 1;
 			energyStorageMax = 50;
 		};
 		soundVoiceType = "gasmask";
 		soundVoicePriority = 5;
 	};
+
+	class PMK_5A_Gas_Mask : Clothing 
+	{
+		attachments[] = {"GasMaskFilter"};
+		displayName = "PMK-5А";
+		noHelmet = 0;
+		noEyewear = 1;
+
+		class EnergyManager
+		{
+			autoSwitchOffWhenInCargo = 1;
+			energyUsagePerSecond = 14;
+			plugType = 1;
+			attachmentAction = 1;
+			updateInterval = 40;
+			autoSwitchOff = 1;
+			energyStorageMax = 50;
+		};
+		soundVoiceType = "gasmask";
+		soundVoicePriority = 5;
+	};
+
+
 	class AirborneMask : Clothing 
 	{
 		attachments[] = {"GasMaskFilter"};

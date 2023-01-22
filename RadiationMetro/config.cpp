@@ -162,6 +162,7 @@ class CfgVehicles
 		displayName = "GP-5";
 		noHelmet = 0;
 		noEyewear = 1;
+		
 
 		class EnergyManager
 		{
@@ -183,11 +184,15 @@ class CfgVehicles
 		displayName = "M10M";
 		noHelmet = 0;
 		noEyewear = 1;
+		quantityBar = 0;
+		varQuantityInit=0;
+		varQuantityMin=0;
+		varQuantityMax=0;
 
 		class EnergyManager
 		{
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 18;
+			energyUsagePerSecond = 16;
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 20;
@@ -207,7 +212,7 @@ class CfgVehicles
 		class EnergyManager
 		{
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 11;
+			energyUsagePerSecond = 12;
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;

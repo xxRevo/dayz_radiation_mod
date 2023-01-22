@@ -140,8 +140,8 @@ modded class GP5GasMask
 
 	void ConsumeFilter()
 	{
-		JZ_GP5GasMask_Filter m_gasmaskfilter = GetGP5GasMaskFilter();
-
+		//JZ_GP5GasMask_Filter m_gasmaskfilter = GetGP5GasMaskFilter();
+		ItemBase m_gasmaskfilter = GetGP5GasMaskFilter();
 		if (m_gasmaskfilter)
 		{
 			if(m_gasmaskfilter.GetQuantity() == 0)
@@ -153,9 +153,13 @@ modded class GP5GasMask
 		}
 	}
 
-	JZ_GP5GasMask_Filter GetGP5GasMaskFilter()
+
+	//JZ_GP5GasMask_Filter GetGP5GasMaskFilter()
+	ItemBase GetGP5GasMaskFilter()
 	{
-		return JZ_GP5GasMask_Filter.Cast(GetAttachmentByType(JZ_GP5GasMask_Filter));
+		EntityAI m_item = this.FindAttachmentBySlotName("GasMaskFilter");
+		ItemBase m_gasmaskfilter = ItemBase.Cast(m_item);
+		return m_gasmaskfilter
 	}
 
 };
@@ -301,8 +305,8 @@ modded class GasMask
 
 	void ConsumeFilter()
 	{
-		JZ_GP5GasMask_Filter m_gasmaskfilter = GetGP5GasMaskFilter();
-
+		//JZ_GP5GasMask_Filter m_gasmaskfilter = GetGP5GasMaskFilter();
+		ItemBase m_gasmaskfilter = GetGP5GasMaskFilter();
 		if (m_gasmaskfilter)
 		{
 			if(m_gasmaskfilter.GetQuantity() == 0)
@@ -315,9 +319,12 @@ modded class GasMask
 	}
 
 
-	JZ_GP5GasMask_Filter GetGP5GasMaskFilter()
+	//JZ_GP5GasMask_Filter GetGP5GasMaskFilter()
+	ItemBase GetGP5GasMaskFilter()
 	{
-		return JZ_GP5GasMask_Filter.Cast(GetAttachmentByType(JZ_GP5GasMask_Filter));
+		EntityAI m_item = this.FindAttachmentBySlotName("GasMaskFilter");
+		ItemBase m_gasmaskfilter = ItemBase.Cast(m_item);
+		return m_gasmaskfilter
 	}
 
 };
@@ -463,8 +470,8 @@ modded class AirborneMask
 
 	void ConsumeFilter()
 	{
-		JZ_GP5GasMask_Filter m_gasmaskfilter = GetGP5GasMaskFilter();
-
+		//JZ_GP5GasMask_Filter m_gasmaskfilter = GetGP5GasMaskFilter();
+		ItemBase m_gasmaskfilter = GetGP5GasMaskFilter();
 		if (m_gasmaskfilter)
 		{
 			if(m_gasmaskfilter.GetQuantity() == 0)
@@ -477,9 +484,12 @@ modded class AirborneMask
 	}
 
 
-	JZ_GP5GasMask_Filter GetGP5GasMaskFilter()
+	//JZ_GP5GasMask_Filter GetGP5GasMaskFilter()
+	ItemBase GetGP5GasMaskFilter()
 	{
-		return JZ_GP5GasMask_Filter.Cast(GetAttachmentByType(JZ_GP5GasMask_Filter));
+		EntityAI m_item = this.FindAttachmentBySlotName("GasMaskFilter");
+		ItemBase m_gasmaskfilter = ItemBase.Cast(m_item);
+		return m_gasmaskfilter
 	}
 
 };
